@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ChatInputView: View {
-
+    
+    @EnvironmentObject var vm : ChatViewModel
     @State var text = ""
     @State private var isTyped = false
     @State private var offsetX = 292.0;
@@ -38,6 +39,12 @@ struct ChatInputView: View {
                     .frame(width: 50,height: 50)
                     .foregroundColor(.black)
                     .padding(.trailing, -14)
+                    .onTapGesture {
+                        if isTyped {
+                            vm.addMessage(isAI: false, message: text)
+                            text = ""
+                        }
+                    }
             }
         }
             .frame(height: 50, alignment: .leading)
@@ -58,5 +65,6 @@ struct ChatInputView: View {
 struct ChatInputView_Previews: PreviewProvider {
     static var previews: some View {
         ChatInputView()
+            .environmentObject(ChatViewModel())
     }
 }

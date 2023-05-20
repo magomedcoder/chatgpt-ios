@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ChatView: View {
+
+    @StateObject var vm = ChatViewModel()
+ 
     var body: some View {
         ZStack{
             VStack{
@@ -15,13 +18,19 @@ struct ChatView: View {
                 ScrollView{
                     ScrollViewReader { proxy in
                         VStack(alignment: .leading){
-
+                            ForEach($vm.messages, id: \.id) { message in
+                                ChatItemView(
+                                    isAI: message.isAI,
+                                    message:message.message).id(message.id
+                                )
+                            }
                         }
                         .padding()
                     }
                 }
                 ChatInputView()
                     .padding(.bottom,14)
+                    .environmentObject(vm)
             }
         }
     }
