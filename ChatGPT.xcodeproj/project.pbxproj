@@ -10,6 +10,11 @@
 		FD5810922A18F04200A77C78 /* ChatGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5810912A18F04200A77C78 /* ChatGPTApp.swift */; };
 		FD5810962A18F04400A77C78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5810952A18F04400A77C78 /* Assets.xcassets */; };
 		FD5810992A18F04400A77C78 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5810982A18F04400A77C78 /* Preview Assets.xcassets */; };
+		FD5810A42A18F51E00A77C78 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5810A32A18F51E00A77C78 /* ChatView.swift */; };
+		FD5810A82A18F6C800A77C78 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5810A72A18F6C800A77C78 /* ChatViewModel.swift */; };
+		FD5810AA2A18F75800A77C78 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5810A92A18F75800A77C78 /* ChatModel.swift */; };
+		FD5810AC2A18F7B500A77C78 /* ChatHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5810AB2A18F7B500A77C78 /* ChatHeaderView.swift */; };
+		FD5810AE2A19152200A77C78 /* ChatInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5810AD2A19152200A77C78 /* ChatInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +22,11 @@
 		FD5810912A18F04200A77C78 /* ChatGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTApp.swift; sourceTree = "<group>"; };
 		FD5810952A18F04400A77C78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD5810982A18F04400A77C78 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD5810A32A18F51E00A77C78 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		FD5810A72A18F6C800A77C78 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		FD5810A92A18F75800A77C78 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		FD5810AB2A18F7B500A77C78 /* ChatHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHeaderView.swift; sourceTree = "<group>"; };
+		FD5810AD2A19152200A77C78 /* ChatInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,9 +59,10 @@
 		FD5810902A18F04200A77C78 /* ChatGPT */ = {
 			isa = PBXGroup;
 			children = (
+				FD58109F2A18F4C100A77C78 /* Assets */,
+				FD5810A62A18F69400A77C78 /* Model */,
+				FD5810A02A18F4E600A77C78 /* UI */,
 				FD5810912A18F04200A77C78 /* ChatGPTApp.swift */,
-				FD5810952A18F04400A77C78 /* Assets.xcassets */,
-				FD5810972A18F04400A77C78 /* Preview Content */,
 			);
 			path = ChatGPT;
 			sourceTree = "<group>";
@@ -62,6 +73,50 @@
 				FD5810982A18F04400A77C78 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD58109F2A18F4C100A77C78 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FD5810952A18F04400A77C78 /* Assets.xcassets */,
+				FD5810972A18F04400A77C78 /* Preview Content */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FD5810A02A18F4E600A77C78 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FD5810A22A18F4FF00A77C78 /* Components */,
+				FD5810A12A18F4F400A77C78 /* Screens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FD5810A12A18F4F400A77C78 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FD5810A32A18F51E00A77C78 /* ChatView.swift */,
+				FD5810A72A18F6C800A77C78 /* ChatViewModel.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FD5810A22A18F4FF00A77C78 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FD5810AB2A18F7B500A77C78 /* ChatHeaderView.swift */,
+				FD5810AD2A19152200A77C78 /* ChatInputView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FD5810A62A18F69400A77C78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD5810A92A18F75800A77C78 /* ChatModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD5810AC2A18F7B500A77C78 /* ChatHeaderView.swift in Sources */,
 				FD5810922A18F04200A77C78 /* ChatGPTApp.swift in Sources */,
+				FD5810AE2A19152200A77C78 /* ChatInputView.swift in Sources */,
+				FD5810A82A18F6C800A77C78 /* ChatViewModel.swift in Sources */,
+				FD5810A42A18F51E00A77C78 /* ChatView.swift in Sources */,
+				FD5810AA2A18F75800A77C78 /* ChatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +322,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ChatGPT/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ChatGPT/Assets/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -270,7 +330,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +354,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ChatGPT/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ChatGPT/Assets/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -302,7 +362,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
