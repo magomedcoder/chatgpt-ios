@@ -11,8 +11,6 @@
 		FD5810962A18F04400A77C78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5810952A18F04400A77C78 /* Assets.xcassets */; };
 		FD5810992A18F04400A77C78 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5810982A18F04400A77C78 /* Preview Assets.xcassets */; };
 		FD5810A42A18F51E00A77C78 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5810A32A18F51E00A77C78 /* ChatView.swift */; };
-		FD5810A82A18F6C800A77C78 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5810A72A18F6C800A77C78 /* ChatViewModel.swift */; };
-		FD5810AA2A18F75800A77C78 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5810A92A18F75800A77C78 /* ChatModel.swift */; };
 		FD5810AC2A18F7B500A77C78 /* ChatHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5810AB2A18F7B500A77C78 /* ChatHeaderView.swift */; };
 		FD5810AE2A19152200A77C78 /* ChatInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5810AD2A19152200A77C78 /* ChatInputView.swift */; };
 /* End PBXBuildFile section */
@@ -23,8 +21,6 @@
 		FD5810952A18F04400A77C78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD5810982A18F04400A77C78 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD5810A32A18F51E00A77C78 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
-		FD5810A72A18F6C800A77C78 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
-		FD5810A92A18F75800A77C78 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		FD5810AB2A18F7B500A77C78 /* ChatHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHeaderView.swift; sourceTree = "<group>"; };
 		FD5810AD2A19152200A77C78 /* ChatInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				FD5810A32A18F51E00A77C78 /* ChatView.swift */,
-				FD5810A72A18F6C800A77C78 /* ChatViewModel.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -114,7 +109,6 @@
 		FD5810A62A18F69400A77C78 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FD5810A92A18F75800A77C78 /* ChatModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,9 +186,7 @@
 				FD5810AC2A18F7B500A77C78 /* ChatHeaderView.swift in Sources */,
 				FD5810922A18F04200A77C78 /* ChatGPTApp.swift in Sources */,
 				FD5810AE2A19152200A77C78 /* ChatInputView.swift in Sources */,
-				FD5810A82A18F6C800A77C78 /* ChatViewModel.swift in Sources */,
 				FD5810A42A18F51E00A77C78 /* ChatView.swift in Sources */,
-				FD5810AA2A18F75800A77C78 /* ChatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
