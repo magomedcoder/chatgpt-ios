@@ -18,7 +18,6 @@ struct ChatHeaderView: View {
         }
         .padding(.horizontal,14)
         .frame(height: 55)
-        .background(.white)
         .opacity(opacity)
         .offset(y: offsetY)
         .onAppear{

@@ -9,11 +9,11 @@ import Foundation
 import Combine
 
 class ChatViewModel: ObservableObject {
-    
+
     private let openAIAPI = OpenAIAPI()
     @Published var messages: [MessageModel] = []
     private var cancellables = Set<AnyCancellable>()
-    
+
     func sendRequest(prompt: String) {
         openAIAPI.chat(prompt: prompt)
             .receive(on: DispatchQueue.main)
@@ -30,7 +30,6 @@ class ChatViewModel: ObservableObject {
             .store(in: &cancellables)
     }
 
-    
     func addMessage(isAI: Bool, message: String){
         messages.append(MessageModel(id: UUID().uuidString, isAI: isAI, message: message))
         if !isAI{

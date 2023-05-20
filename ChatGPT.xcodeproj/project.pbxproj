@@ -19,6 +19,7 @@
 		FD5810B92A1924F300A77C78 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5810B82A1924F300A77C78 /* MessageModel.swift */; };
 		FD5810BF2A1925BC00A77C78 /* ChatItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5810BE2A1925BC00A77C78 /* ChatItemView.swift */; };
 		FD5810C12A19269200A77C78 /* MessageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5810C02A19269200A77C78 /* MessageItem.swift */; };
+		FD5810C72A193E0900A77C78 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5810C62A193E0900A77C78 /* ImageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		FD5810B82A1924F300A77C78 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		FD5810BE2A1925BC00A77C78 /* ChatItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatItemView.swift; sourceTree = "<group>"; };
 		FD5810C02A19269200A77C78 /* MessageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageItem.swift; sourceTree = "<group>"; };
+		FD5810C62A193E0900A77C78 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			children = (
 				FD5810B32A19219F00A77C78 /* ChatModel.swift */,
 				FD5810B82A1924F300A77C78 /* MessageModel.swift */,
+				FD5810C62A193E0900A77C78 /* ImageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,11 +187,11 @@
 			};
 			buildConfigurationList = FD5810892A18F04200A77C78 /* Build configuration list for PBXProject "ChatGPT" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				ru,
 			);
 			mainGroup = FD5810852A18F04200A77C78;
 			productRefGroup = FD58108F2A18F04200A77C78 /* Products */;
@@ -217,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD5810C72A193E0900A77C78 /* ImageModel.swift in Sources */,
 				FD5810B22A19208E00A77C78 /* OpenAIAPI.swift in Sources */,
 				FD5810B72A19227900A77C78 /* ChatViewModel.swift in Sources */,
 				FD5810BF2A1925BC00A77C78 /* ChatItemView.swift in Sources */,
@@ -362,6 +366,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -394,6 +399,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -28,7 +28,7 @@ struct ChatItemView: View {
                 .padding(.all, 10)
                 .padding(.horizontal)
                 .foregroundColor(isAI ? .black : .white)
-                .background(isAI ? Color(.systemGray5) : .blue)
+                .background(isAI ? .white : .blue)
             }
             .scaleEffect(opacityAndScale)
             .opacity(opacityAndScale)

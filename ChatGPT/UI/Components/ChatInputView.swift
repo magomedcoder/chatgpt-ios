@@ -19,12 +19,12 @@ struct ChatInputView: View {
         ZStack(alignment: .leading){
             ZStack{}
                 .frame(maxWidth: .infinity, maxHeight: 55)
-                .background(.white)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 14)
-                    .stroke(.black, lineWidth: 1)
+                .background(
+                    Color(red: 63/255, green: 66/255, blue: 78/255, opacity: 1)
                 )
-                .padding(.horizontal, -14)
+                .cornerRadius(50)
+                .padding([.leading, .trailing, .bottom], 0)
+                .shadow(color: .black, radius: 0.5)
             HStack{
                 TextField("Написать сообщение", text: $text)
                     .onChange(of: text) { newValue in
@@ -37,7 +37,7 @@ struct ChatInputView: View {
                         .rotationEffect(Angle(degrees: isTyped ? 0 : 45))
                 }
                     .frame(width: 50,height: 50)
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                     .padding(.trailing, -14)
                     .onTapGesture {
                         if isTyped {
@@ -46,11 +46,12 @@ struct ChatInputView: View {
                         }
                     }
             }
+                .padding(.horizontal, 10)
+                .padding(.horizontal, 10)
         }
             .frame(height: 50, alignment: .leading)
-            .foregroundColor(.black)
-            .padding(.horizontal, 14)
-            .padding(.horizontal, 14)
+            .padding(.horizontal, 10)
+            .padding(.horizontal, 10)
             .offset(x: offsetX)
             .opacity(opacity)
             .onAppear{

@@ -11,7 +11,7 @@ import SwiftUI
 struct ChatGPTApp: App {
     var body: some Scene {
         WindowGroup {
-            ChatView()
+            ChatView().background(Color(red: 53/255, green: 54/255, blue: 65/255))
         }
     }
 }
